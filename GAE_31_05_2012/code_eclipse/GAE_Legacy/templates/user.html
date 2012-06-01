@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}{{ owner.username }}{% endblock %}
+
+{% block content %}
+<div id="main" style="background: none;">
+	<div id="showUser" class="rounded-corners">
+    	<div id="userdata" class="rounded-corners">
+        	<fieldset>
+            	<legend>{{ owner.username }}</legend>
+        		{% if femaleAcc %}
+        		<img src="../files/image/fuser.png" alt="user pic"/>
+        		{% else %}
+        		<img src="../files/image/userpic.png" alt="user pic"/>
+        		{%endif%}
+        		{% if myPage %}
+        		<a href="/edit/{{ owner.username }}"><input type="button" value="Edit Profile" id="editbtn"/></a>
+        		{% endif %}
+            	<br/>
+           		<p class="accountLabel">Real name:</p>
+            	<p class="accountData">{{ owner.firstname }} </p> 
+            	<p class="accountData"> {{ owner.lastname }}</p>
+            	<br/>
+            	<p class="accountLabel">Country:</p>
+            	<p class="accountData">{{ owner.country }}</p>
+            	<br/>
+            	<p class="accountLabel">Age:</p>
+            	<p class="accountData">{{ age }}</p>
+            	<br/>
+            	<p class="accountLabel">Gender:</p>
+            	<p class="accountData">{{ owner.gender }}</p>
+            	<br/>
+            	<p class="accountLabel">Website:</p>
+            	<p class="accountData">{{ owner.website }}</p>
+            	<br/>
+            </fieldset>
+		</div>
+        <div id="contactInfo">
+        	<div id="mail">
+        		<fieldset>
+        			<legend>Email:</legend>
+            		<p class="accountData">email1</p>
+            		<br/>
+            	</fieldset>
+            </div>
+            <div id="blog">
+            	<fieldset>
+            		<legend>Blogs interest:</legend>
+            		<p class="accountData">blog1<br/>blog2</p>
+            		<br/>
+            	</fieldset>
+            </div>
+		</div>
+   	</div>
+</div>
+{% endblock %}

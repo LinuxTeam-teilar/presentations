@@ -1,0 +1,10 @@
+<html>
+	<head>
+    	<link type="text/css" rel="stylesheet" href="/../stylesheets/myStyle.css" />
+  	</head>
+	<body>
+    {% for contents in query%}
+    	<p>you wrote: <br/> {{ contents.content }}</p></br>
+    	{% endfor %}
+     </body>
+</html>

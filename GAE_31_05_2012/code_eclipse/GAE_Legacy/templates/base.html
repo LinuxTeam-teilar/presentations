@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Website for viewing all e-mails and messages through social media." />
+		<meta name="keywords" content="e-mail, email, mail, messenger, instant messeger" />
+		<meta charset="UTF-8" />
+		<title>Legacy : {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="/files/css/style.css" />
+		<script type="text/javascript" src="/files/javascript/jquery-1.7.1.min.js"></script>
+    	<script type="text/javascript" src="/files/javascript/events.js"></script>
+    	<script type="text/javascript" src="/files/javascript/validate.js"></script>
+        <link rel="icon" type="image/ico" href="/files/image/logo.ico" />
+     </head>
+     <body>
+     	<div id="container" >
+<!-- HEADER -->
+        	<div id="header" class="rounded-corners">
+        		{% if signed %}
+        			<a href="/user/{{ user.username }}" style="text-decoration:none">
+        				<div class="headerButton">
+        					{% if female %}
+        						<img src="/files/image/fuser.png" alt="user pic"/>
+        					{% else %}
+        						<img src="/files/image/userpic.png" alt="user pic"/>
+        					{%endif%}
+        					<p>{{ user.username }}</p>
+        				</div>
+        			</a>
+        			<a href="/logout" style="text-decoration:none">
+        				<div class="headerButton" id="signOutButton">
+        					<img src="/files/image/leave.png" alt="log out"/>
+        					<p>logout</p>
+        				</div>
+        			</a>
+				{% else %}
+        			<div class="headerButton" id="signInButton">
+        				<p>Sign In</p>
+        			</div>
+        			<div id="logIn">
+        				<form action="/login" method="post">
+        					<input type="text" placeholder="Username" class="rounded-corners" name="username"/>
+        					<br/>
+        					<input type="password" placeholder="Enter Password" class="rounded-corners"	name="password"/>
+        					<input type="image" src="/files/image/enter.png" alt="log in" id="loginButton"/>
+						</form>
+					</div>
+				{% endif %}
+				<img src="/files/image/banner.png" alt="Banner" id="banner"/>
+				<a href="/"><img src="/files/image/icon.png" alt="Logo" id="logo"/></a>	
+            </div>
+<!-- END OF HEADER -->
+			{% block content %}{% endblock %}
+<!-- FOOTER -->
+             <div id="footer">
+             	<a href="about">
+             		<div id="aboutButton" class="rounded-corners">
+        				<p>What is legacy?</p>
+        			</div>
+        		</a>
+        		{% if not signed %}
+             	<a href="registration">
+        			<div id="registerButton" class="rounded-corners">
+        				<p>Not a member yet ? <br/> join legacy now</p>
+        			</div>
+        		</a>  
+        		{% endif %}
+    		</div>
+    	</div>
+	</body>
+</html>

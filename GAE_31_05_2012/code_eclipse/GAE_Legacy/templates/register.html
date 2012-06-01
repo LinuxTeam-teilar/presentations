@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Registration{% endblock %}
+
+{% block content %}
+<div id="main">
+<!-- REGISTRATION FORM -->
+            	<form action="/sign" method="post">
+            		<div class="registration">
+            			<h1>Account Registration</h1>
+            			<p> The information below (marked with '*') is necessary in order to create a valid account, the e-mail you provide can be used to inform you about changes of our service or in case that you forget your password.</p>	
+            			<fieldset>
+            				<legend>Required:</legend>
+            				{{ registration }}
+						</fieldset>
+            			<p> The information from this point and below is optional and it can be left blank.</p>	
+            			
+        				<input type="submit" value="Submit and continue" id="submitRegistration"/>
+                 	</div>
+                </form>
+<!-- END OF REGISTRATION FORM -->
+             </div>
+{% endblock %}            

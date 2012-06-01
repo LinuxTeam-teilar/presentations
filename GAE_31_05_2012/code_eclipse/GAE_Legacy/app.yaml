@@ -1,0 +1,17 @@
+application: legacygaeproject
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /files/image
+  static_dir: static/img
+  
+- url: /files/css
+  static_dir: static/css
+  
+- url: /files/javascript
+  static_dir: static/js
+  
+- url: /.*
+  script: legacy.py

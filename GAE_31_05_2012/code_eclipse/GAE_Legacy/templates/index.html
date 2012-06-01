@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div id="main">
+	<div id="menu" class="rounded-corners">
+		<div id="mailCells">
+			<div class="menuCell" id="showMail">
+				<img src="files/image/mailbox.png" alt="web mail" />
+				<p>mailbox</p>
+			</div>
+			<div class="addMenuCell" id="addMail">
+				<p>Add account</p>
+                <img src="files/image/add.png" alt="add"/>
+                <p>Remove account</p>
+                <img src="files/image/remove.png" alt="remove"/>
+             </div>
+		</div>	
+        <div id="messengerCells">
+			<div class="menuCell" id="showMessenger">
+            	<img src="files/image/messenger.png" alt="web mail" />
+           		<p>messenger</p>
+           	</div>
+           	<div class="addMenuCell" id="addMessenger">
+           		<p>Add account</p>
+           		<img src="files/image/add.png" alt="add"/>
+           		<p>Remove account</p>
+           		<img src="files/image/remove.png" alt="remove"/>
+           	</div>
+		</div>	
+        <div id="twitterCells">
+        	<div class="menuCell" id="showTwitter">
+            	<img src="files/image/twitter.png" alt="web mail" />
+                <p>twitter</p>
+			</div>
+            <div class="addMenuCell" id="addTwitter">
+            	<p>Add account</p>
+                <img src="files/image/add.png" alt="add"/>
+                <p>Remove account</p>
+                <img src="files/image/remove.png" alt="remove"/>
+			</div>
+		</div>	
+        <div id="rssCells">
+        	<div class="menuCell" id="showRss">
+            	<img src="files/image/rss.png" alt="web mail" />
+                <p>rss</p>
+			</div>
+            <div class="addMenuCell" id="addRss">
+            	<p>Add account</p>
+                <img src="files/image/add.png" alt="add"/>
+                <p>Remove account</p>
+                <img src="files/image/remove.png" alt="remove"/>
+           	</div>
+		</div>	
+	</div>
+	<div id="data">
+		<p>Register and then use the menu on the left to add and access all your mails and messengers</p>
+	</div>
+</div>
+{% endblock %}

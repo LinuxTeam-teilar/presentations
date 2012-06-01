@@ -1,0 +1,254 @@
+body {
+background : #1a4680;
+font : 12px Arial, Helvetica, sans-serif;
+text-align : left;
+}
+#container {
+display : block;
+width : 100%;
+margin : auto;
+}
+#header {
+background : #003366;
+height : 55px;
+}
+.headerButton {
+height : 55px;
+padding-right : 50px;
+text-align : center;
+font-size : 1.5em;
+font-weight : bold;
+color : #1a4680;
+cursor : pointer;
+border-right : 2px solid #c3baba;
+background-color : rgba(222, 123, 51, 1);
+float : left;
+position : relative;
+}
+#header .headerButton img {
+height : 30px;
+width : 30px;
+float : left;
+}
+.headerButton:hover {
+color : #fff;
+}
+#logIn {
+opacity : 0.60000002384185791015625;
+float : left;
+}
+.rounded-corners {
+border-radius : 15px;
+}
+#loginButton {
+width : 24px;
+height : 24px;
+margin-left : 10px;
+position : absolute;
+background : #fb8936;
+}
+#banner {
+width : 241px;
+height : 50px;
+position : relative;
+float:right;
+}
+#logo {
+width : 50px;
+height : 50px;
+float : right;
+}
+#main {
+width : 1050px;
+background : #333333;
+margin-top : 20px;
+margin-right: auto;
+margin-left:auto;
+}
+#footer {
+margin-top : 20px;
+float : right;
+}
+#aboutButton {
+height : 65px;
+text-align : center;
+font-size : 1.5em;
+font-weight : bold;
+color : #1a4680;
+cursor : pointer;
+border-right : 2px solid #c3baba;
+background-color : rgba(222, 123, 51, 1);
+opacity : 0.60000002384185791015625;
+float : left;
+position : relative;
+}
+#registerButton {
+margin-left : 10px;
+text-align : center;
+font-size : 1.5em;
+font-weight : bold;
+color : #1a4680;
+cursor : pointer;
+border-right : 2px solid #c3baba;
+background-color : rgba(222, 123, 51, 1);
+opacity : 0.60000002384185791015625;
+height : 65px;
+float : left;
+position : relative;
+}
+#footer a {
+text-decoration : none;
+}
+#footer div:hover {
+color : #fff;
+opacity : 1;
+}
+#menu {
+width : 15%;
+margin : auto;
+float : left;
+}
+.menuCell {
+border-bottom : 2px dotted #99ccff;
+width : 100%;
+text-align : center;
+font-size : 16px;
+font-weight : bold;
+color : #1a4680;
+cursor : pointer;
+background-color : rgba(222, 123, 51, 1);
+height : 65px;
+float : left;
+position : relative;
+}
+.menuCell img {
+float : left;
+height: 60px;
+width: 60px;
+}
+.addMenuCell {
+background : #bbb;
+display : table;
+width : 98%;
+}
+.addMenuCell p {
+float : left;
+}
+.addMenuCell img {
+width : 15px;
+height : 15px;
+padding-top : 10px;
+float : right;
+margin-right : 30px;
+}
+#data {
+background : #ffffcc;
+float : left;
+margin : auto;
+width : 80%;
+height : 268px;
+}
+#showUser {
+background : #ffffcc;
+padding-bottom : 10px;
+height : 350px;
+}
+#userdata {
+padding-right : 50px;
+float : left;
+}
+#showUser legend {
+font-size : 30px;
+}
+#userdata img {
+float : left;
+width : 64px;
+height : 64px;
+}
+#editbtn, #userdata #submitRegistration {
+background-color : #f90;
+}
+.accountLabel {
+float : left;
+padding-right : 20px;
+font-weight : bold;
+text-align : left;
+width : 70px;
+}
+.accountData {
+float : left;
+padding-right : 5px;
+}
+#userdata br {
+clear : left;
+}
+#contactInfo div {
+padding-top : 20px;
+}
+#userdata .rounded-corners {
+float : left;
+}
+#userdata .error {
+color : #ff0000;
+float : right;
+margin : 0;
+}
+.checkbox {
+float : right;
+margin-right : 30px;
+}
+.registration h1 {
+background : #cc0000;
+border-bottom : 1px solid #161712;
+border-top : 1px solid #161712;
+color : #fff5cc;
+text-transform : uppercase;
+font-size : 18px;
+text-align : left;
+padding : 5px 0 5px 5px;
+}
+.registration .error {
+color : #ff0000;
+float : right;
+margin : 0;
+}
+.registration label, .registration input, .registration select {
+float : left;
+margin-bottom : 1ex;
+}
+.registration input, .registration select {
+background : #eeefff;
+width : 20em;
+margin-right : 10px;
+}
+.registration #bDay, .registration #bMonth, .registration #bYear {
+background : #eeefff;
+width : auto;
+margin-right : 10px;
+}
+.registration label, .registration legend, .registration p {
+color : #bbb;
+font-size : 13px;
+}
+.registration label {
+width : 150px;
+text-align : right;
+padding-right : 2em;
+}
+.registration br {
+clear : left;
+}
+.registration #submitRegistration {
+background : #cc0000;
+border : 0;
+border-bottom : 1px double #660000;
+border-top : 1px double #660000;
+border-right : 1px double #ff0033;
+font-size : 16px;
+color : #fff;
+font-weight : bold;
+margin-top : 10px;
+padding-bottom : 20px;
+height : 20px;
+width : 200px;
+}
