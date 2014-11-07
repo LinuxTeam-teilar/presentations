@@ -1,1 +1,1 @@
-Here you can find all the presentation of LinuxTeam.
+Here you can find all the presentations of LinuxTeam.
